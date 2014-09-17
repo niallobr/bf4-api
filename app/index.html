@@ -13,6 +13,8 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- endbuild -->
   </head>
   <body>
@@ -34,8 +36,10 @@
       <div class="jumbotron">
         <p class="intro">This is a simple Battlefield 4 application I have built using the <a href="http://www.bf4stats.com" target="_blank">BF4Stats.com</a> API.</p>
         <br />
-        <input type="text" placeholder="Enter a soldier name" id="term" />
-        <button id="search">Find soldier</button>
+        <form>
+          <input type="text" placeholder="Enter a soldier name" id="soldier-name" />
+          <button id="search">Find soldier</button>
+        </form>
       </div>
 
       <div class="row marketing">
