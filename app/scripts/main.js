@@ -1,11 +1,20 @@
-console.log('\'Allo \'Allo!');
-
 $(function () {
+
+	var $onlinePlayers = $('#onlinePlayers');
+
     $.ajax({
         type: 'GET',
         url: 'http://api.bf4stats.com/api/onlinePlayers',
-        success: function(data) {
-          console.log("Players currently online:", data); //returns all online players
+        success: function(onlinePlayers) {
+        	
+        	console.log("Players online:", onlinePlayers); //returns all online players
+       		
+       		$.each(onlinePlayers, function(i, onlinePlayers) {
+       			$onlinePlayers.append('<li>' + onlinePlayers.label + ': ' + onlinePlayers.count + '</li>');
+       		});
        }
     });
+
+
+
 });
