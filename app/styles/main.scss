@@ -90,3 +90,43 @@ body {
     border-bottom: 0;
   }
 }
+
+/* Custom Styles */
+$pad: 15px;
+$black: #000000;
+
+body{background-color: $black + 50;}
+p {font-size: 16px !important;}
+ul {margin-left: -3em !important;}
+li {list-style-type: none;}
+
+.container .jumbotron {
+min-height: 550px;
+}
+
+#soldier_basic_info {
+
+  p {
+  text-align: left;
+  padding-top: $pad;
+  }
+
+}
+
+.icon-platform.pc, .icon-platform-big.pc {
+width: 18px;
+background-position: 0 -10px;
+}
+.icon-platform, .icon-platform-big {
+background: url(http://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/d4e5f01bb1964795df4f725aa36a7d87b2d809e7e/public/common/icons/platforms.png);
+height: 10px;
+}
+
+#players_online {
+
+  li {
+    display: inline-block;
+    padding-left: $pad;
+  }
+
+}
